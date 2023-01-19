@@ -79,7 +79,7 @@ function comprarTienda()
         let encontrarProd = productos.find((prod) => prod.id == compraProd)
         if (encontrarProd != undefined) 
         {
-            let cantidad = parseInt(prompt("Cantidad del producto " + encontrarProd.nombre + " comprará?"))
+            let cantidad = parseInt(prompt("Cantidad del producto " + encontrarProd.nombre + " que comprará?"))
             carroCompras.push({ nombre: encontrarProd.nombre, cantidad: cantidad, precio: encontrarProd.precio})
             console.log(carroCompras);           
         }
